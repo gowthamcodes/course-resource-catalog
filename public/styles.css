@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #8aa9a8;
+  padding: 5% auto;
+}
+
+li,
+a {
+  text-decoration: none;
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: 8%;
+}
+
+.navbar {
+  margin-right: 8%;
+}
+
+.navbar li {
+  margin-left: 20px;
+  padding: 20px 5px;
+  display: inline-block;
+}
+
+.navbar li a {
+  margin: 0 7px;
+  color: #fff;
+}
+
+.navbar li:hover {
+  background-color: #789c9b;
+}
+
+.container {
+  margin: 3% 8%;
+  padding: 2% 15%;
+  line-height: 35px;
+}
+
+.heading {
+  margin-top: 5px;
+  margin-bottom: 45px;
+}
+
+.list-elements {
+  margin: 15px 15px 0 45px;
+}
+
+.description {
+  color: #d06255;
+}
+
+.description:hover {
+  color: rgb(194, 51, 34);
+}
+
+.content {
+  margin: 5px;
+}
+
+section {
+  margin-top: 15px;
+}
+
+@media all and (max-width: 800px) {
+  header {
+    justify-content: space-around;
+  }
+  .logo {
+    margin: 5px 0;
+  }
+
+  .container {
+    margin: 0;
+  }
+
+  .content {
+    padding: 0;
+    text-align: left;
+  }
+}
+
+@media all and (max-width: 600px) {
+  header {
+    flex-flow: column wrap;
+  }
+  .logo {
+    margin: 5px 0;
+  }
+
+  .container {
+    margin: 0;
+  }
+
+  .content {
+    padding: 0;
+    text-align: left;
+  }
+}
